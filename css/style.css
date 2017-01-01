@@ -1,0 +1,99 @@
+html, body {
+  overflow-x: hidden; /* To prevent scroll on narrow devices */
+  height: 100%;
+}
+body {
+  padding-top: 70px;
+  font-size: 14px;
+  color: #fff;
+  /*background-color: #61122f;*/
+  background-color: #8e8e8e;
+  font-family: 'Oxygen', sans-serif;
+}
+#main-nav{
+  /*background-color: #333300;*/
+  background-color: #85c450;
+}
+
+#menu{
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid blue;
+}
+
+.jumbotron-content{
+  color:#000000;
+}
+
+#jumbo {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer {
+  padding: 8px 0;
+}
+
+.awesome a{
+  color:#fff;
+  font-size: 0.8em;
+}
+
+#wrap{
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+      }
+#push,#footer {
+              height: 60px;
+            }
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
