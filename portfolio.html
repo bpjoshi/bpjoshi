@@ -9,17 +9,26 @@
     <!--Meta tag for information -->
     <meta name="description" content="Bhagwati Prasad, bpjoshi">
     <meta name="author" content="Bhagwati Prasad">
-    <title>Blog Posts</title>
+    <title>Curriculum Vitae</title>
     <!--External Style sheets-->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
-    <link href="../css/bootstrap-social.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript">
+    function openPdf()
+    {
+      var omyFrame = document.getElementById("myFrame");
+      omyFrame.style.display="block";
+      omyFrame.src = "docs/CV_BhagwatiPrasad.pdf";
+    }
+</script>
   </head>
 
-  <body>
+  <body onload="openPdf();">
     <!--Code for Navigation bar start-->
     <div id="wrap">
     <nav id="main-nav" class="navbar navbar-fixed-top">
@@ -31,11 +40,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.html">BPJoshi</a>
+          <a class="navbar-brand" href="index.html">BPJoshi</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse"><!-- Collpasable nanbar start-->
           <ul id="menu" class="nav navbar-nav">
-            <li class=""><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home</a></li>
+            <li class=""><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home</a></li>
             <li><a target="_blank" href="blog.html"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp;Blog</a></li>
             <li><a href="portfolio.html"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>&nbsp;Portfolio</a></li>
             <li><a href="contact.html"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>&nbsp;Contact</a></li>
@@ -48,7 +57,11 @@
     <div class="container">
 
       <div class="row">
-
+        <div class="col-xs-12 col-sm-2"></div>
+        <div class="col-xs-12 col-sm-8">
+          <iframe id="myFrame" style="display:none" width="100%" height="1000px;"></iframe>
+        </div>
+        <div class="col-xs-12 col-sm-2"></div>
       </div><!--/row-->
 
       <div id="push"></div>
